@@ -1,0 +1,11 @@
+
+property.input.mk 
+( Claim.make {x : path fcs | true} 
+(λ x, x ⊨ absent.globally (coe Damaged)))
+
+([λ (x : path fcs), x⊨not_init ↑Damaged, 
+
+
+λ (x : path fcs), 
+∀ i : ℕ, ((x.action i) ∈ vacuum_actions) → (x.state i) ≠ ↑Damaged]
+    )

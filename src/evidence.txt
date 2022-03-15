@@ -1,0 +1,14 @@
+import justification Architectural.LACU input.lacu_contract rpo_meta 
+ open S A
+
+ @[reducible] def lacu_input : property.input (path pump1) := b
+
+ @[reducible] def lacu_strat : Strategy (Trace PORTS) := property.strategy lacu_input
+
+
+theorem lacu_strat_valid : deductive (Trace PORTS) lacu_strat := 
+begin 
+a
+end
+
+
